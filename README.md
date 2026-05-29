@@ -68,20 +68,6 @@ OmeTV Assistant does not collect personal information and does not sell user dat
 
 The extension only runs on supported OmeTV pages to provide filtering, shortcut, and analytics features.
 
-## Installation
-
-### Manual Installation
-
-1. Download the extension source.
-2. Open Chrome.
-3. Go to:
-
-chrome://extensions
-
-4. Enable Developer Mode.
-5. Click Load Unpacked.
-6. Select the extension folder.
-
 ## Support
 
 If you encounter any issues or have suggestions for improvements, please submit feedback through the project's support channels.
