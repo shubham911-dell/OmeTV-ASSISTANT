@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "OmeTV Assistant",
+  "version": "1.0.0",
+  "description": "Ultra-fast country filtering, keyboard shortcuts, and session analytics for OmeTV.",
+  "permissions": ["storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "OmeTV Assistant",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://ome.tv/*",
+        "https://www.ome.tv/*",
+        "https://ometv.com/*",
+        "https://www.ometv.com/*"
+      ],
+      "js": [
+        "settings.js",
+        "storage.js",
+        "history.js",
+        "countryManager.js",
+        "analytics.js",
+        "skipEngine.js",
+        "keyboard.js",
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
