@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "OmeTV Assistant",
   "version": "1.0.0",
-  "description": "Ultra-fast country filtering, keyboard shortcuts, and session analytics for OmeTV.",
+  "description": "Smart country filtering, keyboard shortcuts, and session analytics for OmeTV.",
   "permissions": ["storage"],
   "background": {
     "service_worker": "background.js"
